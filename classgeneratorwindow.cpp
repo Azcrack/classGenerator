@@ -6,15 +6,15 @@ ClassGeneratorWindow::ClassGeneratorWindow()
     validateNewItem = new QPushButton("Validate");
 
 
-    QStringList attrMethList;
-//    attrMethList << "int x" << "int y" << "void count()" << "int getX()" << "int getY()" << "void setX(int x)" << "void setY(int y)";
+    //QStringList attrMethList;
+    //attrMethList << "int x" << "int y" << "void count()" << "int getX()" << "int getY()" << "void setX(int x)" << "void setY(int y)";
 
-    QStringListModel *mod = new QStringListModel(attrMethList);
-
+    //QStringListModel *mod = new QStringListModel(attrMethList);
+    /*
     viewUserAttrAndMeth = new QListView();
         viewUserAttrAndMeth->setStyleSheet("background-color:#e2e2e2;border: 0px, solid, #e2e2e2");
         viewUserAttrAndMeth->setModel(mod);
-
+    */
 
     className       = new QLineEdit;
     headerClassName = new QLineEdit;
@@ -65,10 +65,10 @@ ClassGeneratorWindow::ClassGeneratorWindow()
         topBoxLayout->addWidget(classDefinitionGroup);
         topBoxLayout->addWidget(optionClassGroup);
 
-    QString typeArray[] = { "int", "double", "float", "char", "string", "void" };
+    //QString typeArray[] = { "int", "double", "float", "char", "string", "void" };
 
-    for (int i(0); i <= 5; i++) btnArray[i] = new QRadioButton(typeArray[i]);
-
+    //for (int i(0); i <= 5; i++) btnArray[i] = new QRadioButton(typeArray[i]);
+    /*
     QVBoxLayout *typeLayout = new QVBoxLayout;
         typeLayout->addWidget(btnArray[0]);
         typeLayout->addWidget(btnArray[1]);
@@ -76,6 +76,7 @@ ClassGeneratorWindow::ClassGeneratorWindow()
         typeLayout->addWidget(btnArray[3]);
         typeLayout->addWidget(btnArray[4]);
         typeLayout->addWidget(btnArray[5]);
+
 
     QGroupBox *typeGroup = new QGroupBox("Type:");
         typeGroup->setLayout(typeLayout);
@@ -115,6 +116,7 @@ ClassGeneratorWindow::ClassGeneratorWindow()
 
     attrAndMethGroup = new QGroupBox("Attributes and methods");
     attrAndMethGroup->setLayout(attrAndMethLayout);
+    */
 
     authorLabel = new QLabel("Author:");
     dateLabel = new QLabel("Date:");
@@ -154,7 +156,7 @@ ClassGeneratorWindow::ClassGeneratorWindow()
     QVBoxLayout *rootLayout = new QVBoxLayout;
         rootLayout->addLayout(topBoxLayout);
         //rootLayout->addWidget(optionClassGroup);
-        rootLayout->addWidget(attrAndMethGroup);
+        //rootLayout->addWidget(attrAndMethGroup);
         rootLayout->addWidget(commentsBox);
         rootLayout->addLayout(buttonsLayout);
 

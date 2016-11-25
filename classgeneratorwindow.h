@@ -37,11 +37,15 @@ private:
 
     QRadioButton *btnArray[5];
 
-    QLineEdit *attrOrMethName;
+    //QLineEdit *attrOrMethName;
+
+    // Settings
+    /*
     QCheckBox *isStatic;
     QCheckBox *isFriend;
     QCheckBox *isVirtual;
     QCheckBox *isPureVirtual;
+    */
 
     QPushButton *validateNewItem;
     QListView *viewUserAttrAndMeth;
